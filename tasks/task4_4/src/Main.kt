@@ -14,8 +14,21 @@ fun main(args: Array<String>) {
         println("Error: 3 arguements required")
         exitProcess(1)
     }
-    //initial temperature in Celsius; a maximum temperature in Celsius; and a temperature increment.
-    val initialTemperature = args[0].toFloat()
+    
+    var currentTemperature = args[0].toFloat()
     val maxTemperature = args[1].toFloat()
     val temperatureIncrement = args[2].toFloat()
+    
+    val t = Terminal()
+    t.println(table {
+    header { row("Celsius", "Fahrenheit") }
+    body {
+        while (currentTemperature <= maxTemperature){
+            val fahrenheit = ((currentTemperature * 1.8) + 32)
+            val roundedFahrenheit = String.format("%.1f",fahrenheit)
+            row(currentTemperature,roundedFahrenheit)
+            currentTemperature += temperatureIncrement
+        }
+    }
+})
 }
