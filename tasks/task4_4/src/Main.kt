@@ -10,4 +10,12 @@ import com.github.ajalt.mordant.terminal.Terminal
 
 fun main(args: Array<String>) {
     // Add your code here
+    if (args.size != 3){
+        println("Error: 3 arguements required")
+        exitProcess(1)
+    }
+    //initial temperature in Celsius; a maximum temperature in Celsius; and a temperature increment.
+    val initialTemperature = args[0].toFloat()
+    val maxTemperature = args[1].toFloat()
+    val temperatureIncrement = args[2].toFloat()
 }
