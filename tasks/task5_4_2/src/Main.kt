@@ -4,7 +4,7 @@ fun main(){
     val string2 = "aaaaaaaaaaaaaaaaaaaa" // 20
     val string3 = "aaaaaaaaaaaaaaaaaaaaaaaaa" //25
     
-    println(string1.isTooLong())
-    println(string2.isTooLong())
-    println(string3.isTooLong())
+    println(string1.isTooLong)
+    println(string2.isTooLong)
+    println(string3.isTooLong)
 }
