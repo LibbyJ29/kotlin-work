@@ -7,9 +7,6 @@ fun main() {
     val vowelCount = text.howMany {it.lowercase() in "aeiou"}
     println("${vowelCount} vowels in string")
     
-    val charCount = text.howMany {it.size}
-    println("${charCount} characters in string")
-    
-    val wordCount = text.howMany {it in " " + 1}
+    val wordCount = text.howMany {it in " "} + 1
     println("${wordCount} words in string")
 }
