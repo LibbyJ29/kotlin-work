@@ -3,9 +3,25 @@
 Here is a UML class diagram, specified using [Mermaid][mer].
 
 ```mermaid
-%% Replace this line and the two below
 classDiagram
-  note "Placeholder for a real class diagram"
+    class Customer
+    Customer: name
+    Customer: address
+    Customer: placeOrder()
+
+    class Order
+    Order: orderNumber
+    Order: datePlaced
+    Order: deliveryDate
+    Order: checkStock()
+    Order: takePayment()
+
+    class OrderItem
+    OrderItem: name
+    OrderItem: description
+
+    Customer --> Order: places
+    Order --> OrderItem: includes
 ```
 
 
