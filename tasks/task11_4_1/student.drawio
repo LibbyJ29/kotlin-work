@@ -1,9 +1,33 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="15-G4nEzSCYj-ehbOYNJ">
-    <mxGraphModel dx="1186" dy="919" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="659" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Ziw0aomWbUUoWtVI4C_m-35" edge="1" parent="1" source="Ziw0aomWbUUoWtVI4C_m-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" value="Enrols On">
+          <mxGeometry relative="1" x="-0.0028" y="-10" as="geometry">
+            <mxPoint y="-20" as="offset" />
+            <mxPoint x="540" y="410.1578947368422" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ziw0aomWbUUoWtVI4C_m-11" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Student" vertex="1">
+          <mxGeometry height="100" width="160" x="310" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Ziw0aomWbUUoWtVI4C_m-12" parent="Ziw0aomWbUUoWtVI4C_m-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;id: Int&lt;/div&gt;&lt;div&gt;name: String&lt;/div&gt;&lt;div&gt;degreeProgramme: String&lt;/div&gt;&lt;div&gt;levelOfStudy: Int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ziw0aomWbUUoWtVI4C_m-20" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Module" vertex="1">
+          <mxGeometry height="150" width="220" x="540" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Ziw0aomWbUUoWtVI4C_m-21" parent="Ziw0aomWbUUoWtVI4C_m-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;moduleCode: String&lt;/div&gt;&lt;div&gt;title: String&lt;/div&gt;&lt;div&gt;numCredits: Int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ziw0aomWbUUoWtVI4C_m-32" parent="Ziw0aomWbUUoWtVI4C_m-20" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="220" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ziw0aomWbUUoWtVI4C_m-33" parent="Ziw0aomWbUUoWtVI4C_m-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;enrolStudent(student: Student)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;generateTranscript(student: Student)" vertex="1">
+          <mxGeometry height="62" width="220" y="88" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
