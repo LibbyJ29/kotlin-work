@@ -20,6 +20,7 @@ class ToDoList(){
     }
 
     fun load(filename: String){
+        items.clear()
         Path(filename).forEachLine{
             val parsedLines = it.split(": ")
             items.add(ToDoItem(LocalDate.parse(parsedLines[0]), ItemStatus.valueOf(parsedLines[1]), parsedLines[2]))
